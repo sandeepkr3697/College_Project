@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Encryption and Decryption</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>Message Encryption and Decryption</h2>
+        <div class="btn-container">
+            <button class="btn" onclick="goToEncryption()">Message Encryption</button>
+            <button class="btn" onclick="goToDecryption()">Message Decryption</button>
+        </div>
+    </div>
+
+    <script>
+        function goToEncryption() {
+            // Redirect to encryption page or perform encryption logic
+            window.location.href = "{% url 'encryption' %}";
+        }
+
+        function goToDecryption() {
+            // Redirect to decryption page or perform decryption logic
+            window.location.href = "{% url 'decryption' %}";
+        }
+    </script>
+</body>
+</html>

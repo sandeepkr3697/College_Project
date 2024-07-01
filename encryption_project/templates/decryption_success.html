@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Decryption Success</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}"> <!-- Link to your external CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h2>Decryption Success</h2>
+        <div class="message-box">
+            <p class="message-title">Decrypted Message:</p>
+            <p class="message">{{ message }}</p>
+        </div>
+        <a href="{% url 'home' %}" class="btn">Back to Home</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Encryption Success</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}"> <!-- Link to your external CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h2>Encryption Successful</h2>
+        <p class="success-message">Image successfully encrypted and saved:</p>
+        <a href="{{ image_path }}" download="encrypted_image.jpg" class="btn">Download Encrypted Image</a>
+        <a href="{% url 'home' %}" class="btn">Back to Home</a>
+    </div>
+</body>
+</html>
