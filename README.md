@@ -7,6 +7,9 @@ Features
     Steganography: Embeds the encrypted message into a selected image using LSB technique.
     Decryption: Extracts and decrypts the hidden message from the modified image using the correct password.
 
+
+
+
 Usage
     Encryption and Embedding
         1.Input Password:
